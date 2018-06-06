@@ -184,3 +184,49 @@ footer {
 .divider {
     margin: 1em 0;
 }
+
+form {
+  ul,
+  ol,
+  li {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+}
+input,
+textarea,
+select,
+select[multiple="multiple"] {
+  background-color: #fff;
+  border-color: $form-border-color;
+  border-radius: $form-border-radius;
+  border-style: solid;
+  border-width: 1px 1px 4px 1px;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  margin-bottom: 0.25em;
+  padding: 0.75em;
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
