@@ -5,8 +5,5 @@ layout: default
 <p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
 
 {{content}}
-
+{%include comments.html %}
 <!-- Comments only for posts -->
-{% if page.path contains '_posts' %}
-        {% include staticman_form.html %}
-{% endif %}
