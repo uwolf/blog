@@ -1,6 +1,6 @@
 ---
 title: Impressum
-date: 2018-06-10 08:22:00 
+date: 2018-06-10 08:22:00 Z
 layout: default
 ---
 

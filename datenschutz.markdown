@@ -1,10 +1,7 @@
 ---
 title: Datenschutz
 layout: default
-layout: default
 ---
-
-
 
 Datenschutzerklärung
 --------------------
