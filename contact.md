@@ -2,6 +2,7 @@
 title: Contact
 permalink: "/contact/"
 layout: post
+lang: de
 ---
 
 May be a contact form.

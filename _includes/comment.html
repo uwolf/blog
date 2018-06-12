@@ -1,0 +1,6 @@
+<div class="comment">
+	Am {{ include.date | localize: "%d. %B %Y" }} schreibt {{ include.name}}:
+	<div class="comment-text">
+		{{ include.message | markdownify }}
+	</div>
+</div>

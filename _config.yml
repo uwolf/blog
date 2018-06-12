@@ -1,6 +1,7 @@
 ---
 title: Hagura - Light!
 timezone: UTC
+lang: de
 collections:
   posts:
     title: Posts
@@ -8,12 +9,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-baseurl: "/blog"
-email: your@email.com
+    # baseurl: "/blog"
+email: blog@wolftexte.de
 highlighter: rouge
 markdown: kramdown
-analytics: UA-83979019-1
-disqus-shortname: webjeda-demo
 compress_html:
   clippings:
   - html

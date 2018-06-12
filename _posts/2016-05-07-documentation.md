@@ -2,6 +2,8 @@
 title: Documentation
 date: 2016-05-07 00:00:00 Z
 layout: post
+lang: fr
+nocomments: true
 ---
 
 # Features:
@@ -13,6 +15,9 @@ The theme comes with pre-installed **analytics**, **disqus** and **html compress
 
 * Do not remove this line (it will not be displayed) 
 {:toc}
+
+
+{{ page.date | localize: :short,  "de"}}
 
 ## Switch Night-Mode
 The best part is the night-mode that comes with this theme. Once you click on night-mode, the website remebers it untill you close or toggle!

@@ -1,0 +1,25 @@
+{% if page.path contains '_posts' %}
+<div id="comments" class="comments">
+	{% if site.data.comments[page.slug] %}
+	<!-- Start static comments -->
+	<header class="section-title">
+		<h3>{% if site.data.comments[page.slug].size > 1 %}{{ site.data.comments[page.slug] | size | append: ' ' }}{% endif %}Kommentare</h3>
+	</header>
+	{% assign comments = site.data.comments[page.slug] | sort  %}
+	{% for comment in comments %}
+	{% assign index       = forloop.index %}
+	{% assign email       = comment[1].email %}
+	{% assign name        = comment[1].name %}
+	{% assign url         = comment[1].url %}
+	{% assign date        = comment[1].date %}
+	{% assign message     = comment[1].comment %}
+	{% include comment.html index=index  email=email name=name url=url date=date message=message %}
+	{% endfor %}
+	<!-- End static comments -->
+	{% endif %}
+	<header class="section-title">
+			<h3>Schreiben Sie einen Kommentar:</h3>
+	</header>
+	{% include staticman_form.html %}
+</div>
+{% endif %}
